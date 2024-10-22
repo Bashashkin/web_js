@@ -5,7 +5,7 @@
 - [Задание 2](https://github.com/Bashashkin/web_js/blob/main/1_5_2.js)
 - [Задание 3](https://github.com/Bashashkin/web_js/blob/main/1_5_3.js)
 
-[Лаб 2. Отчет. Массивы в JavaScript ](lab2.pdf)
+[Лаб 2. Отчет. Массивы в JavaScript ](lab2_js.pdf)
 
 - [Задание 1](2_1.js)
 - [Задание 2](2_5_2.js)
