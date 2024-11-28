@@ -1,17 +1,32 @@
-// Напишите функцию, которая проверяет, положительное или отрицательное число
+const readline = require('readline');
 
+// Создаем интерфейс для ввода текста через консоль
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+// Функция проверки, положительное или отрицательное число
 function isPositive(a) {
-    if (typeof a != 'number') {
-        return console.log("Ошибка: Введите число");
+    if (isNaN(a)) { // если не число
+        return "Ошибка: Введите корректное число";
     }
     if (a >= 0) {
-        return console.log("Число положительное");
+        return "Число положительное";
     } else {
-        return console.log("Число отрицательное");
+        return "Число отрицательное";
     }
 }
 
-isPositive('123'); // Ошибка: Введите число
-isPositive(123); // Число положительное
-isPositive(-1.23); // Число отрицательное
-isPositive('asd', -1); // Ошибка: Введите число
+// Функция запуска текстового интерфейса
+function runInterface() {
+    rl.question("Введите число: ", (inputA) => {
+        const a = parseFloat(inputA); // выведет NaN, если на вход пойдет не число
+        const result = isPositive(a);
+        console.log(result);
+
+        rl.close(); 
+    });
+}
+
+runInterface();
