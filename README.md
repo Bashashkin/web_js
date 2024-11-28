@@ -1,4 +1,5 @@
-# web_js
+# Курс "Основы программирования на JavaScript"
+
 ## Лаб 1. Логические структуры в JavaScript
 
 - [Задание 1](https://github.com/Bashashkin/web_js/blob/main/1_5_1.js)
