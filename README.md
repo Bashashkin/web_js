@@ -16,3 +16,21 @@
 - [Задание 1](function.js)
 - [Задание 2](remainder.js)
 - [Задание 3](ispositive.js)
+
+## Лаб 4. Браузерный JavaScript
+
+### Галерея изображений
+- [Скрипт](gallery.js)
+- [HTML](gallery.html)
+- [CSS](gallery.css)
+- [Источник картинок](img.zip)
+
+### Редактор canvas
+- [Скрипт](canvas.js)
+- [HTML](canvas.html)
+- [CSS](canvas.css)
+
+### Викторина
+- [Скрипт](quiz.js)
+- [HTML](quiz.html)
+- [CSS](quiz.css)
