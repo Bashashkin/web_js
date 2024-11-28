@@ -23,7 +23,7 @@
 - [Скрипт](gallery.js)
 - [HTML](gallery.html)
 - [CSS](gallery.css)
-- [Источник картинок](img.zip)
+- [Архив с картинками](img.zip)
 
 ### Редактор canvas
 - [Скрипт](canvas.js)
