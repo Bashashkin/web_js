@@ -1,12 +1,23 @@
 // Напишите функцию,которая приветствует по имени 
 
+const readline = require('readline');
+
+// Создаем интерфейс для чтения из консоли
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+// Функция приветствия
 function greet(name) {
-    if (typeof name != 'string') {
-        return console.log('Ошибка: используйте символы')
-    } else {
-        return console.log('Привет, ', name);
+    if (!name) {
+        return "Привет, безымянный!";
     }
+    return `Привет, ${name}! Приятно познакомиться!`;
 }
 
-greet("Алексей"); // Привет,  Алексей
-greet(123); // Ошибка: имя должно состоять только из символов
+// Запрашиваем имя пользователя
+rl.question('Как Вас зовут? ', (name) => {
+    console.log(greet(name));
+    rl.close(); 
+});
