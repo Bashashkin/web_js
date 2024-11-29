@@ -18,15 +18,10 @@ function isPositive(a) {
     }
 }
 
-// Функция запуска текстового интерфейса
-function runInterface() {
-    rl.question("Введите число: ", (inputA) => {
-        const a = parseFloat(inputA); // выведет NaN, если на вход пойдет не число
-        const result = isPositive(a);
-        console.log(result);
+rl.question("Введите число: ", (inputA) => {
+    const a = parseFloat(inputA); // выведет NaN, если на вход пойдет не число
+    const result = isPositive(a);
+    console.log(result);
 
-        rl.close(); 
-    });
-}
-
-runInterface();
+    rl.close(); 
+});
