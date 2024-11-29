@@ -43,3 +43,12 @@
 - [HTML](index.html)
 - [CSS](style.css)
 
+### Таймер обратного отсчета
+- [Скрипт](timer_script.js)
+- [HTML](timer_index.html)
+- [CSS](timer_style.css)
+
+### Графический редактор
+- [Скрипт](editor_script.js)
+- [HTML](editor_index.html)
+- [CSS](editor_style.css)
