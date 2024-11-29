@@ -35,3 +35,11 @@
 - [Скрипт](quiz.js)
 - [HTML](quiz.html)
 - [CSS](quiz.css)
+
+## Лаб 5. События и манипуляции с DOM
+
+### drag-and-drop интерфейс для сортировки списка элементов. 
+- [Скрипт](script.js)
+- [HTML](index.html)
+- [CSS](style.css)
+
