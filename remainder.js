@@ -8,30 +8,32 @@ const rl = readline.createInterface({
 
 // Функция нахождения остатка от деления двух чисел
 function remainder(a, b) {
-    if (typeof a !== 'number' || typeof b !== 'number') {
-        return "Ошибка: Введите числа.";
-    } else if (b === 0 || a === 0) {
+    // Проверка, что оба значения являются числами
+    if (isNaN(a) || isNaN(b)) {
+        return "Ошибка: Введите корректные числа.";
+    }
+    // Проверка на деление на ноль
+    if (b == 0) {
         return "Ошибка: Деление на ноль недопустимо.";
-    } else if (a > b) {
-        return a % b;
+    }
+    // Если остаток отрицательный, добавляем делитель, чтобы остаток был положительным
+    if (a%b < 0) {
+        return a%b+Math.abs(b);
     } else {
-        return b % a;
+    return a % b;
     }
 }
 
 // Функция запуска текстового интерфейса
-function runInterface() {
-    rl.question("Введите первое число: ", (inputA) => {
-        rl.question("Введите второе число: ", (inputB) => {
-            const a = parseFloat(inputA);
-            const b = parseFloat(inputB);
-
-            const result = remainder(a, b);
-            console.log("Результат:", result);
-
-            rl.close(); // Закрываем интерфейс после выполнения
-        });
+rl.question("Введите первое число: ", (inputA) => {
+    rl.question("Введите второе число: ", (inputB) => {
+        // Преобразуем введенные значения в числа
+        const a = parseFloat(inputA);
+        const b = parseFloat(inputB);
+        // Вызов функции для нахождения остатка от деления
+        const result = remainder(a, b);
+        // Вывод результата
+        console.log("Результат:", result);
+        rl.close();
     });
-}
-
-runInterface();
+});
