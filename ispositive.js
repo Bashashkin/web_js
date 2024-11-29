@@ -1,6 +1,6 @@
 const readline = require('readline');
 
-// Создаем интерфейс для ввода текста через консоль
+// Создаем интерфейс для ввода через консоль
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -18,6 +18,7 @@ function isPositive(a) {
     }
 }
 
+// Запуск интерфейса
 rl.question("Введите число: ", (inputA) => {
     const a = parseFloat(inputA); // выведет NaN, если на вход пойдет не число
     const result = isPositive(a);
